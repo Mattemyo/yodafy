@@ -8,8 +8,10 @@ button.addEventListener("click", () => {
   // replace spaces with plus signs
   console.log(input);
 
-  fetch(`http://localhost:3000/${input.value}`).then(response => {
-    console.log(response.body);
-    output.innerHTML = response.body;
-  });
+  fetch(`https://fierce-citadel-20064.herokuapp.com/${input.value}`).then(
+    response => {
+      console.log(response.body);
+      output.innerHTML = response.body;
+    }
+  );
 });
