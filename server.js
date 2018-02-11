@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get("/:text", (req, res) => {
-  // These code snippets use an open-source library. http://unirest.io/nodejs
+  
   unirest
     .get(`https://yoda.p.mashape.com/yoda?sentence=${req.params.text}`)
     .header(
@@ -19,7 +19,7 @@ app.get("/:text", (req, res) => {
     .header("Accept", "text/plain")
     .end(result => {
       console.log(result.raw_body);
-      res.send(String(result.raw_body));
+      res.json(result.raw_body);
     });
 });
 
