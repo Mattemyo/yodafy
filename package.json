@@ -1,0 +1,10 @@
+{
+  "name": "yodafy",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "require": "^2.4.20",
+    "unirest": "^0.5.1"
+  }
+}
