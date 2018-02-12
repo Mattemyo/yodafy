@@ -6,7 +6,8 @@
 * {
   font-family: starwars;
   text-transform: uppercase;
-  line-height: 1
+  line-height: 1;
+  letter-spacing: 2px;
 }
 
 * {
