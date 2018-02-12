@@ -19,7 +19,7 @@ app.get("/:text", (req, res) => {
     .header("Accept", "text/plain")
     .end(result => {
       console.log(result.raw_body);
-      res.json(result.raw_body);
+      res.json(result.body);
     });
 });
 
