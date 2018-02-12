@@ -1,7 +1,7 @@
 const input = document.getElementsByTagName("input")[0];
 const button = document.getElementsByClassName("button")[0];
 const output = document.getElementsByTagName("p")[0];
-const spinner = document.getElementsByClassName("wrap")[0];
+const spinner = document.getElementsByClassName("spinner")[0];
 
 spinner.classList.add("hidden");
 button.addEventListener("click", () => {
