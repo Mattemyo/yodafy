@@ -15,6 +15,7 @@ button.addEventListener("click", () => {
     .then(data => {
       console.log(data);
       spinner.classList.add("hidden");
-      output.innerText = data;
+      output.innerText =
+        data.charAt(0) === "<" ? "ooops. Back later today, you may come" : data;
     });
 });
