@@ -8,9 +8,14 @@ button.addEventListener("click", () => {
   // show spinner
   spinner.classList.remove("hidden");
   output.innerText = "";
-  // replace spaces with plus signs
+  // replace '?' with url encoding
 
-  fetch(`https://fierce-citadel-20064.herokuapp.com/${input.value}`)
+  fetch(
+    `https://fierce-citadel-20064.herokuapp.com/${input.value.replace(
+      "?",
+      "%3F"
+    )}`
+  )
     .then(response => response.json())
     .then(data => {
       console.log(data);
